@@ -4,6 +4,7 @@ $( document ).ready(function() {
 // displayComicInfo function re-renders the HTML to display the appropriate content
 
 	function displayComicInfo() {
+
 		var comic = $(this).attr("data-comic");
 		var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
 	        comic + "&api_key=FysH7E39RWPxOtgrJsm3Sr5T7TAjV2pa&limit=10";
@@ -23,7 +24,7 @@ $( document ).ready(function() {
 		        	gifDiv.append(a);
 
 		        	var comicImage = $("<img>");
-		        	comicImage.attr("src", results[i].images.fixed_height_still.url);
+		        	comicImage.attr("src", results[i].images.fixed_height.url);
 		        	comicImage.attr("data-still", results[i].images.fixed_height_still.url);
 		        	comicImage.attr("data-animate", results[i].images.fixed_height.url);
 		        	comicImage.attr("data-state", "still");
