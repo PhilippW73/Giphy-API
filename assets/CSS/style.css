@@ -1,0 +1,25 @@
+.col-sm-12 {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.comic {
+	margin-right: 10px;
+}
+
+.row {
+	height: 100px;
+}
+
+#comic-input {
+	margin-left: 10px;
+}
+
+.item {
+	float: left;
+}
+
+.gif {
+	margin-right: 10px;
+	margin-bottom: 15px;
+}
