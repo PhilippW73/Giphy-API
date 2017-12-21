@@ -27,7 +27,7 @@ $( document ).ready(function() {
 		        	comicImage.attr("src", results[i].images.fixed_height.url);
 		        	comicImage.attr("data-still", results[i].images.fixed_height_still.url);
 		        	comicImage.attr("data-animate", results[i].images.fixed_height.url);
-		        	comicImage.attr("data-state", "still");
+		        	comicImage.attr("data-state", "animate");
 		        	$(comicImage).addClass("gif");
 		            gifDiv.append(comicImage);
 		        	$("#gifs-appear-here").prepend(gifDiv);
@@ -35,7 +35,7 @@ $( document ).ready(function() {
 			});
 }
 
-	$(".gif").on("click", function() {
+	$(document).on("click", ".gif", function() {
 		// The attr jQuery method allows us to get or set the value of any attribute on our HTML element
 	    var state = $(this).attr("data-state");
 	    // If the clicked image's state is still, update its src attribute to what its data-animate value is.
