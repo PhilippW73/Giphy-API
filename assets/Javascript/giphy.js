@@ -36,7 +36,7 @@ $( document ).ready(function() {
 }
 
 	$(document).on("click", ".gif", function() {
-		// The attr jQuery method allows us to get or set the value of any attribute on our HTML element
+		// The attr jQuery method allows to get or set the value of any attribute on our HTML element
 	    var state = $(this).attr("data-state");
 	    // If the clicked image's state is still, update its src attribute to what its data-animate value is.
       	// Then, set the image's data-state to animate
@@ -64,6 +64,7 @@ $( document ).ready(function() {
 			for (var i=0; i < comics.length; i++) {
 				var b = $("<button>");
 				b.addClass("comic");
+				b.addClass("btn btn-primary")
 				b.attr("data-comic", comics[i]);
 				b.text(comics[i]);
 				$("#buttons-view").append(b);
@@ -75,7 +76,10 @@ $( document ).ready(function() {
 	        var comic = $("#comic-input").val().trim();
 	        comics.push(comic);
 	        renderButtons();
+	        document.getElementById("comic-input").value="";
+
 	});
+
 // Adding a click event listener to all elements with a class of "comic"
 	$(document).on("click", ".comic", displayComicInfo);
 // Calling the renderButtons function to display the intial buttons
