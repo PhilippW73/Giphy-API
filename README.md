@@ -8,6 +8,6 @@ GIFs have a play/ stop feature when clicked.
 - HTML5
 - CSS
 - JAVASCRIPT
-- CSS
+- JQuery
 - Giphy API
 - Ajax
