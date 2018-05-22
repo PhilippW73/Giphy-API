@@ -12,11 +12,12 @@ button {
 	color: black;
 }
 
+.container1 {
+	margin: 0;
+}
+
 .col-sm-12 {
-	margin-top: 15px;
-	margin-bottom: 15px;
-	border: 1px;
-	background-color: darkgrey;
+	background-color: white;
 }
 
 .comic {
@@ -26,10 +27,7 @@ button {
 
 .row {
 	height: 100px;
-	margin-left: 20px !important;
 }
-
-
 
 #comic-form {
 	border: 2px;
@@ -49,13 +47,19 @@ button {
 	margin-bottom: 15px;
 }
 
-.container 1 {
-	background-color: #4D4D50 !important;
+.container2 {
+	margin-left: 20px;
 }
+
 .container3 {
 	margin-top: 60px;
+	margin-left: 20px;
 }
 
 #add-comic {
 	margin-top: 5px;
+}
+
+.btn {
+	margin-bottom: 20px !important;
 }
